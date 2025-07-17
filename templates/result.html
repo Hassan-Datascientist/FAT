@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #e2f0f9; padding: 40px; }
+        .result-box { max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h2 { color: #333; }
+        p { font-size: 18px; margin-top: 10px; color: #444; }
+        a { display: inline-block; margin-top: 20px; text-decoration: none; background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; }
+        a:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>Prediction Result</h2>
+        <p><strong>Result:</strong> {{ result }}</p>
+        <p><strong>Probability of Diabetes:</strong> {{ prob }}%</p>
+        <a href="/">Try Again</a>
+    </div>
+</body>
+</html>
